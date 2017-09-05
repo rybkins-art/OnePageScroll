@@ -1,1 +1,39 @@
-demo
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>One Page Scroll</title>
+    <meta content="" name="author">
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+
+    <link rel="stylesheet" href="demo/css/one_page.css">
+
+  </head>
+  <body>
+    <div class="container">
+      <div class="frame" id="page1" one-page-hint="Page 1" one-page-current="true"><span>#Page 1</span></div>
+      <div class="frame" id="page2" one-page-hint="Page 2"><span>#Page 2</span></div>
+      <div class="frame" id="page3" one-page-hint="Page 3"><span>#Page 3</span></div>
+      <div class="frame" id="page4" one-page-hint="Page 4"><span>#Page 4</span></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="demo/js/jquery.mousewheel.min.js"></script>
+    <script src="demo/js/ops.min.js"></script>
+
+    <script type="text/javascript">
+        $(".container").onePageScroll({
+            selector: ".frame",
+            startPage: 1,
+            duration: 300,
+            easing: 'ease-out',
+            horizontal: false,
+            keyboard: true,
+        });
+    </script>
+
+  </body>
+</html>
