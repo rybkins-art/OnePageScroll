@@ -5,7 +5,7 @@ one page scroll jquery plugin
 
 #### Демо
 
-[http://imdim.github.io/ops](http://imdim.github.io/ops/)
+[http://imdim.github.io/](http://imdim.github.io/)
 
 #### Установка
 
